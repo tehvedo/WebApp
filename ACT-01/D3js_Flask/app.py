@@ -33,5 +33,10 @@ def files():
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=5000, debug=True)
 
+# S3 EDIT - New Endpoint Added
+@app.route("/")
+def main():
+        return rendertemplate("about.html")
+
 
 
