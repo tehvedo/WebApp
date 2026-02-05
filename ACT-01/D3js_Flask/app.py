@@ -36,7 +36,7 @@ if __name__ == '__main__':
 # S3 EDIT - New Endpoint Added
 @app.route("/")
 def main():
-        return rendertemplate("about.html")
+        return render_template("about.html") # Added Underscore!
 
 
 
